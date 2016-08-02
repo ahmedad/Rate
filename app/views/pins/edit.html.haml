@@ -1,5 +1,5 @@
 .col-md-6.col-offset-3
 	%h1 Edit pin
-	= image_tag @pin.image.url, width: '300', height: '300'
+	= image_tag @pin.image.url(:medium)
 	= render 'form'
 	= link_to "Cancel", pin_path
