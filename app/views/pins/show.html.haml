@@ -20,3 +20,4 @@
 						-	if user_signed_in?
 							= link_to "Edit", edit_pin_path, class: "btn btn-defualt"
 							= link_to "Delete", pin_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-defualt"
+		= render 'disqus'
