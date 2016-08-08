@@ -1,24 +1,44 @@
-#pin_show.row
-	.col-md-6.col-md-offset-2
-		.panel.panel-defualt
-			.panel-heading.pin_image
-				= image_tag @pin.image.url
-			.panel-body
-				%h1= @pin.title
-				%p.description= @pin.description
+- if user_signed_in?
+	%p#intro
+		Hello
+		= current_user.email
+		%br/
+		%span
+			Nala Qeybso Fikradada ku aadan musharaxaan.
+- else
+	%p#intro
+		What's your muse?
+		%br/
+		%span
+			Nala Qeybso Fikradada ku aadan musharaxaan.
+#post_show
+	
+	.clearfix
+		.post_image_description
+			= image_tag @pin.image.url(:medium)
+			%h1= @pin.title
+			.description= simple_format(@pin.description)
+			= render 'disqus'
+		.btn-group.pull-right
+			-	if user_signed_in? 
+				= link_to "Edit", edit_pin_path, class: "btn btn-success"
+				= link_to "Delete", pin_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-success"
 
-			.panel-footer
-				.row
-					.col-md-6
-						%p= Submitted by
-						%p= @pin.user.name
-						%p= @pin.user.email
-					.col-md-6
-					.btn-group.pull-right
-						= link_to like_pin_path(@pin), method: :put, class: "btn btn-defualt" do
-							%span.glyphicon.glyphicon-heart
-							= @pin.get_upvotes.size
-						-	if user_signed_in?
-							= link_to "Edit", edit_pin_path, class: "btn btn-defualt"
-							= link_to "Delete", pin_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-defualt"
-		= render 'disqus'
+	
+		.post_data
+			= link_to like_pin_path(@pin), method: :get, class: "data" do
+				%i.fa.fa-thumbs-o-up
+				= pluralize(@pin.get_upvotes.size, "Like")
+			= link_to dislike_pin_path(@pin), method: :get, class: "data" do
+				%i.fa.fa-thumbs-o-down
+				= pluralize(@pin.get_downvotes.size, "Dislike")
+		
+
+/ 	= link_to like_pin_path(@pin), method: :get, class: "data" do
+/ 		%i.fa.fa-thumbs-o-up
+/ 		= pluralize(@pin.get_upvotes.size, "Like")
+/ 	= link_to dislike_pin_path(@pin), method: :get, class: "data" do
+/ 		%i.fa.fa-thumbs-o-down
+/ 		= pluralize(@pin.get_downvotes.size, "Dislike")
+
+/= render 'disqus'

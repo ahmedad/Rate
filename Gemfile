@@ -27,6 +27,7 @@ gem 'paperclip', '~> 5.0'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'disqus', '~> 1.0', '>= 1.0.4'
+gem 'activemerchant', '~> 1.60'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
