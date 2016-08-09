@@ -20,7 +20,7 @@
 			.description= simple_format(@pin.description)
 			= render 'disqus'
 		.btn-group.pull-right
-			-	if user_signed_in? 
+			-	if user_signed_in? && current_user == @pin.user
 				= link_to "Edit", edit_pin_path, class: "btn btn-success"
 				= link_to "Delete", pin_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-success"
 

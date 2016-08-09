@@ -21,6 +21,7 @@
 				    <div class="form-group">
 				    	<%= f.input :password_confirmation, required: true, input_html: { class: 'form-control' } %>
 				    </div>
+				    <input type="text" name="user[user_type]" hidden="hidden" value="<%= params[:user_type]%>">
 				  </div>
 
 				  <div class="form-actions">

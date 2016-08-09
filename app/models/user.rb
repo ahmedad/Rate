@@ -5,4 +5,12 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          
   has_many :pins
+
+  def is_candidate?
+  	user_type == "Candidate"
+  end
+
+  def is_citizen?
+  	user_type == "Citizen"
+  end
 end
