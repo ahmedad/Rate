@@ -23,12 +23,10 @@
 			-	if user_signed_in? && current_user == @pin.user
 				= link_to "Edit", edit_pin_path, class: "btn btn-success"
 				= link_to "Delete", pin_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-success"
-
-	
 		.post_data
-			= link_to like_pin_path(@pin), method: :put, class: "data" do
+			= link_to like_pin_path(@pin), method: :get, class: "data" do
 				%i.glyphicon.glyphicon-thumbs-up
-				= pluralize(@pin.get_upvotes.size, "Like")
-			= link_to dislike_pin_path(@pin), method: :put, class: "data" do
+				= pluralize(@pin.get_upvotes.size, "Upvote")
+			= link_to dislike_pin_path(@pin), method: :get, class: "data" do
 				%i.glyphicon.glyphicon-thumbs-down
-				= pluralize(@pin.get_downvotes.size, "Dislike")
+				= pluralize(@pin.get_downvotes.size, "Downvote")
