@@ -286,6 +286,7 @@ DEPENDENCIES
   masonry-rails (~> 0.2.4)
   paperclip (~> 5.0)
   pg
+  puma
   rails (= 4.2.6)
   rails_12factor
   rails_admin (~> 0.8.1)

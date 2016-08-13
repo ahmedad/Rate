@@ -23,6 +23,7 @@ gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'stripe'
 gem 'rails_admin', '~> 0.8.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'puma'
 
 group :development, :test do
   gem 'byebug'
@@ -33,8 +34,14 @@ end
 
 group :development do
   gem 'web-console', '~> 2.0'
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
   gem 'spring'
 end
+
 
 group :production do
   gem 'pg'
