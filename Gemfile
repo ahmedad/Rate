@@ -25,6 +25,7 @@ gem 'rails_admin', '~> 0.8.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+gem 'sqlite3'
 
 
 group :development, :test do
@@ -46,7 +47,6 @@ end
 
 
 group :production do
-  gem 'sqlite3'
   gem 'rails_12factor'
 end
 
