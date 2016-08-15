@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 
+
 group :development, :test do
   gem 'byebug'
 end
@@ -45,7 +46,7 @@ end
 
 
 group :production do
-  gem 'pg'
+  gem 'sqlite3'
   gem 'rails_12factor'
 end
 
