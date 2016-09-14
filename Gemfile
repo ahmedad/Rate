@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'rollbar', '~> 2.12'
-gem 'sqlite3'
+
 
 
 group :development, :test do
@@ -37,6 +37,7 @@ end
 # end
 
 group :development do
+  gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'capistrano',         require: false
   gem 'capistrano-rvm',     require: false
@@ -48,6 +49,7 @@ end
 
 
 group :production do
+  gem 'pg'
   gem 'rails_12factor'
 end
 
