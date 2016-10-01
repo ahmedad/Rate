@@ -27,6 +27,7 @@ gem 'puma'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'social-share-button', '~> 0.6.0'
 gem 'rollbar', '~> 2.12'
+gem 'sqlite3'
 
 
 
@@ -39,7 +40,7 @@ end
 # end
 
 group :development do
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'capistrano',         require: false
   gem 'capistrano-rvm',     require: false
@@ -51,7 +52,6 @@ end
 
 
 group :production do
-  gem 'sqlite3'
   gem 'rails_12factor'
 end
 
