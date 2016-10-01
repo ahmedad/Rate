@@ -16,10 +16,12 @@
  *= require 'masonry/transitions'
  *= require_tree .
  *= require_self
+ *= require social-share-button
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "social-share-button";
 
 body {
 	background: aliceblue;
@@ -74,7 +76,7 @@ nav {
 	  text-align: center;
 	  img {
 	  	max-width: 100%;
-	  	height: auto;
+	  	height: 30rem;
 	  }
 	  h2 {
 	  	font-size: 22px;

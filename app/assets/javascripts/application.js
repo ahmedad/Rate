@@ -13,6 +13,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require social-share-button
 //= require masonry/jquery.masonry
 // require turbolinks
 //= require froala_editor.min.js

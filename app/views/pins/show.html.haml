@@ -4,13 +4,13 @@
 		= current_user.email
 		%br/
 		%span
-			Nala Qeybso Fikradada ku aadan musharaxaan.
+			Share with us your opinion
 - else
 	%p#intro
-		What's your muse?
+		What's your opinion?
 		%br/
 		%span
-			Nala Qeybso Fikradada ku aadan musharaxaan.
+			Share with us your opinion
 #post_show
 	
 	.clearfix
@@ -30,3 +30,6 @@
 			= link_to dislike_pin_path, method: :get, class: "data" do
 				%i.glyphicon.glyphicon-thumbs-down
 				= pluralize(@pin.get_downvotes.size, "Downvote")
+			%h3 
+				share with your friends
+				= social_share_button_tag(@pin.title)
