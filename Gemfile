@@ -27,7 +27,7 @@ gem 'puma'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'social-share-button', '~> 0.6.0'
 gem 'rollbar', '~> 2.12'
-gem 'sqlite3'
+#gem 'sqlite3'
 
 
 
