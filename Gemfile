@@ -27,6 +27,7 @@ gem 'puma'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'social-share-button', '~> 0.6.0'
 gem 'rollbar', '~> 2.12'
+gem 'elastic_email_rails', '~> 0.1.0'
 #gem 'sqlite3'
 
 
@@ -35,9 +36,9 @@ gem 'rollbar', '~> 2.12'
 group :development, :test do
   gem 'byebug'
 end
-# group :development do
-#   gem 'sqlite3'
-# end
+group :development do
+   gem 'sqlite3'
+end
 
 group :development do
   #gem 'sqlite3'

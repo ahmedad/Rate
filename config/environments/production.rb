@@ -75,12 +75,9 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = {:host => 'hubso.info'}
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :address => "127.0.0.1",
-    :port    => 25,
-    :domain  => 'hubso.info'
-}
+  config.action_mailer.delivery_method = :elastic_email
+  config.action_mailer.elastic_email_settings = {
+          api_key: '87eb9870-2cd9-4869-b42e-a79f22eb3877',
+          username: 'ahmedad2077@gmail.complex'
+  }
 end
