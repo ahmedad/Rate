@@ -36,9 +36,7 @@ gem 'elastic_email_rails', '~> 0.1.0'
 group :development, :test do
   gem 'byebug'
 end
-group :development do
-   gem 'sqlite3'
-end
+
 
 group :development do
   #gem 'sqlite3'
