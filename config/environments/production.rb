@@ -75,10 +75,14 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  config.action_mailer.default_url_options = { :host => 'hakik.herokuapp.com' }
-  config.action_mailer.delivery_method = :elastic_email
-  config.action_mailer.elastic_email_settings = {
-          api_key: '<elastic email api key>',
-          username: '<elastic email username>'
-    }
+  config.action_mailer.delivery_method = :smtp
+# SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+   :address              => "smtp.gmail.com",
+   :port                 => 587,
+   :user_name            => ENV['shamsudin35@gmail.com'],
+   :password             => ENV['95986565'],
+   :authentication       => "plain",
+   :enable_starttls_auto => true
+  }
 end
