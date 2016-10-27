@@ -46,6 +46,18 @@ h1, h2, h3, h4, h5, h6 {
   	color: dimgrey;
 }
 
+.caret {
+	margin-left: -1.5rem;
+  	margin-top: 1rem;
+}
+
+.dropdown-menu > li > a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
 .col-md-6 {
     width: 50%;
     margin-left: 0rem;
