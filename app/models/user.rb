@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
          
   has_many :pins
+  belongs_to :plan
 
   def is_candidate?
   	user_type == "Candidate"

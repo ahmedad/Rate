@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161026071032) do
+ActiveRecord::Schema.define(version: 20161107041219) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -40,6 +40,13 @@ ActiveRecord::Schema.define(version: 20161026071032) do
   end
 
   add_index "pins", ["user_id"], name: "index_pins_on_user_id"
+
+  create_table "plans", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "subscriptions", force: :cascade do |t|
     t.integer  "user_id"
@@ -72,6 +79,8 @@ ActiveRecord::Schema.define(version: 20161026071032) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
+    t.boolean  "admin",                  default: false
+    t.integer  "plan_id"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
