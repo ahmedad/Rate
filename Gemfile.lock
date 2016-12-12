@@ -23,11 +23,6 @@ GEM
     activejob (4.2.6)
       activesupport (= 4.2.6)
       globalid (>= 0.3.0)
-    activemerchant (1.60.0)
-      activesupport (>= 3.2.14, < 5.1)
-      builder (>= 2.1.2, < 4.0.0)
-      i18n (>= 0.6.9)
-      nokogiri (~> 1.4)
     activemodel (4.2.6)
       activesupport (= 4.2.6)
       builder (~> 3.1)
@@ -97,8 +92,6 @@ GEM
       json
     domain_name (0.5.20160615)
       unf (>= 0.0.5, < 1.0.0)
-    elastic_email_rails (0.1.0)
-      actionmailer (>= 3.2.13)
     erubis (2.7.0)
     execjs (2.7.0)
     font-awesome-rails (4.6.3.1)
@@ -151,7 +144,6 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
-    paypal-recurring (1.1.0)
     pg (0.18.4)
     pkg-config (1.1.7)
     puma (3.6.0)
@@ -274,7 +266,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activemerchant (~> 1.60)
   acts_as_votable (~> 0.10.0)
   bootstrap-sass (~> 3.3, >= 3.3.7)
   byebug
@@ -286,7 +277,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise (~> 4.2)
   disqus (~> 1.0, >= 1.0.4)
-  elastic_email_rails (~> 0.1.0)
   font-awesome-rails (~> 4.6, >= 4.6.3.1)
   haml (~> 4.0, >= 4.0.7)
   jbuilder (~> 2.0)
@@ -294,7 +284,6 @@ DEPENDENCIES
   masonry-rails (~> 0.2.4)
   nokogiri (~> 1.6, >= 1.6.8)
   paperclip (~> 5.0)
-  paypal-recurring (~> 1.1)
   pg
   puma
   rails (= 4.2.6)
