@@ -29,6 +29,7 @@ gem 'social-share-button', '~> 0.6.0'
 gem 'rollbar', '~> 2.12'
 gem 'elastic_email_rails', '~> 0.1.0'
 gem 'sqlite3'
+gem 'paypal-recurring', '~> 1.1'
 
 
 

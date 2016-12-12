@@ -13,6 +13,10 @@
 			- if user_signed_in?
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to "Sign Out", destroy_user_session_path, method: :delete
+					/ -if params[:plan] == '2'
+					/ %li= link_to "Post new", new_plan_path
+					/ -else
+					/ 	%li= link_to "Post new", root_path
 				%ul.nav.navbar-nav.navbar-right
 					.dropdown
 						%button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"} Check your county
