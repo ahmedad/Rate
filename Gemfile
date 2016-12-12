@@ -17,18 +17,16 @@ gem 'paperclip', '~> 5.0'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'disqus', '~> 1.0', '>= 1.0.4'
-gem 'activemerchant', '~> 1.60'
 gem 'wysiwyg-rails', '~> 2.3', '>= 2.3.4'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
-gem 'stripe'
 gem 'rails_admin', '~> 0.8.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'social-share-button', '~> 0.6.0'
 gem 'rollbar', '~> 2.12'
-gem 'elastic_email_rails', '~> 0.1.0'
-gem 'sqlite3'
+
+
 
 
 
