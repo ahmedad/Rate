@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  # devise_for :user
-  # devise_for :admin
   resources :plan
   resources :payments
   resources :payments
