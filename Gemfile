@@ -19,7 +19,7 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'disqus', '~> 1.0', '>= 1.0.4'
 gem 'wysiwyg-rails', '~> 2.3', '>= 2.3.4'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
-gem 'rails_admin', '~> 0.8.1'
+gem 'rails_admin', '~> 1.4.3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'nokogiri', '~> 1.10', '>= 1.10.4'
