@@ -22,7 +22,7 @@ gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'rails_admin', '~> 0.8.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
-gem 'nokogiri', '~> 1.10', '>= 1.10.4'
+gem 'nokogiri', '~> 1.13'
 gem 'social-share-button', '~> 0.6.0'
 gem 'rollbar', '~> 2.12'
 gem 'elastic_email_rails'
